@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dcbee873f695ad366c8138269b9fb648 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style='position:fixed; bottom:30px; left:30px; z-index:1000;
+     background:white; padding:10px; border-radius:8px;
+     border:2px solid gray; font-size:13px;'>
+<b>🍺 Damm Smart Truck</b><br>
+Ruta DR0051 — 5/2/2026<br><br>
+<span style='color:black'>⬤</span> DDI Mollet (Depot)<br>
+<span style='color:blue'>⬤</span> Calldetenes (5)<br>
+<span style='color:green'>⬤</span> Folgueroles (4)<br>
+<span style='color:purple'>⬤</span> Sant Julià de Vilatorta (5)<br>
+<span style='color:red'>⬤</span> Vic (10)<br>
+<span style='color:orange'>⬤</span> Sant Fost (1)<br><br>
+<span style='color:gray'>— —</span> Ruta baseline<br>
+Total: 25 clients · 142 km · 9.8h
+</div>
+    
+            <div class="folium-map" id="map_dcbee873f695ad366c8138269b9fb648" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dcbee873f695ad366c8138269b9fb648 = L.map(
+                "map_dcbee873f695ad366c8138269b9fb648",
+                {
+                    center: [41.93, 2.28],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6621d2724d34b1df8e270aaf1398fb6a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6621d2724d34b1df8e270aaf1398fb6a.addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+            var marker_4079532245a9bae3b40714b7f0184cc1 = L.marker(
+                [41.5444, 2.2105],
+                {
+}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+            var icon_0ca6026c0d24aab19c7f6166e75b7e81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f44b7cff9f15f7facdede9eac976b7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61551bd77e779ad3cc354ec34e6d4e1c = $(`<div id="html_61551bd77e779ad3cc354ec34e6d4e1c" style="width: 100.0%; height: 100.0%;"><b>🏭 DDI Mollet (Depot)</b><br>Punt de sortida i arribada</div>`)[0];
+                popup_2f44b7cff9f15f7facdede9eac976b7d.setContent(html_61551bd77e779ad3cc354ec34e6d4e1c);
+            
+        
+
+        marker_4079532245a9bae3b40714b7f0184cc1.bindPopup(popup_2f44b7cff9f15f7facdede9eac976b7d)
+        ;
+
+        
+    
+    
+            marker_4079532245a9bae3b40714b7f0184cc1.bindTooltip(
+                `<div>
+                     DDI Mollet (Depot)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4079532245a9bae3b40714b7f0184cc1.setIcon(icon_0ca6026c0d24aab19c7f6166e75b7e81);
+            
+    
+            var circle_marker_d5b2f12d0609dc7a5cb922d2a7ccf5af = L.circleMarker(
+                [41.9102, 2.2801],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_dc0a51d7d4fcafcfe81cc71c8d3c287f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_671d1986748aaa9e5525eaaf84869247 = $(`<div id="html_671d1986748aaa9e5525eaaf84869247" style="width: 100.0%; height: 100.0%;"><b>RESTAURANT EL ROSER</b><br>CALLDETENES<br>Palets: 0.3</div>`)[0];
+                popup_dc0a51d7d4fcafcfe81cc71c8d3c287f.setContent(html_671d1986748aaa9e5525eaaf84869247);
+            
+        
+
+        circle_marker_d5b2f12d0609dc7a5cb922d2a7ccf5af.bindPopup(popup_dc0a51d7d4fcafcfe81cc71c8d3c287f)
+        ;
+
+        
+    
+    
+            circle_marker_d5b2f12d0609dc7a5cb922d2a7ccf5af.bindTooltip(
+                `<div>
+                     1. RESTAURANT EL ROSER
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0bee4b76ed2c350e71be35f99d695122 = L.circleMarker(
+                [41.9098, 2.2795],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_8fad2fe0a60b53c87ccafb070cb00740 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e691f8dfb4c7b8e6b00a46df9cf30cf = $(`<div id="html_9e691f8dfb4c7b8e6b00a46df9cf30cf" style="width: 100.0%; height: 100.0%;"><b>CELLER CALLDETENES</b><br>CALLDETENES<br>Palets: 0.1</div>`)[0];
+                popup_8fad2fe0a60b53c87ccafb070cb00740.setContent(html_9e691f8dfb4c7b8e6b00a46df9cf30cf);
+            
+        
+
+        circle_marker_0bee4b76ed2c350e71be35f99d695122.bindPopup(popup_8fad2fe0a60b53c87ccafb070cb00740)
+        ;
+
+        
+    
+    
+            circle_marker_0bee4b76ed2c350e71be35f99d695122.bindTooltip(
+                `<div>
+                     2. CELLER CALLDETENES
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a638d5750f1ff75c55bc9cbd4490620 = L.circleMarker(
+                [41.9095, 2.279],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_9ceca55b2e1afae8eb9ae0174dc03934 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d9ed5cad2ebcc687616fd7cd281695f = $(`<div id="html_6d9ed5cad2ebcc687616fd7cd281695f" style="width: 100.0%; height: 100.0%;"><b>SUKIPA</b><br>CALLDETENES<br>Palets: 0.4</div>`)[0];
+                popup_9ceca55b2e1afae8eb9ae0174dc03934.setContent(html_6d9ed5cad2ebcc687616fd7cd281695f);
+            
+        
+
+        circle_marker_0a638d5750f1ff75c55bc9cbd4490620.bindPopup(popup_9ceca55b2e1afae8eb9ae0174dc03934)
+        ;
+
+        
+    
+    
+            circle_marker_0a638d5750f1ff75c55bc9cbd4490620.bindTooltip(
+                `<div>
+                     3. SUKIPA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67bf970aab07919f72e460311ffe4c9d = L.circleMarker(
+                [41.9088, 2.281],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_469fc47db6cbee7e954ad0bfd6e651e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ba909afb4ee9f58038815937ed48856 = $(`<div id="html_3ba909afb4ee9f58038815937ed48856" style="width: 100.0%; height: 100.0%;"><b>BAR DE LA BENZINERA</b><br>CALLDETENES<br>Palets: 0.5</div>`)[0];
+                popup_469fc47db6cbee7e954ad0bfd6e651e2.setContent(html_3ba909afb4ee9f58038815937ed48856);
+            
+        
+
+        circle_marker_67bf970aab07919f72e460311ffe4c9d.bindPopup(popup_469fc47db6cbee7e954ad0bfd6e651e2)
+        ;
+
+        
+    
+    
+            circle_marker_67bf970aab07919f72e460311ffe4c9d.bindTooltip(
+                `<div>
+                     4. BAR DE LA BENZINERA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3347c4710307dab3ff0ae31b6fcd5104 = L.circleMarker(
+                [41.9092, 2.2798],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_f61ce6dbe9099bfc860d2242a1ec5f44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e85519219e927567f8e858a09337d255 = $(`<div id="html_e85519219e927567f8e858a09337d255" style="width: 100.0%; height: 100.0%;"><b>CA LA NENA</b><br>CALLDETENES<br>Palets: 0.3</div>`)[0];
+                popup_f61ce6dbe9099bfc860d2242a1ec5f44.setContent(html_e85519219e927567f8e858a09337d255);
+            
+        
+
+        circle_marker_3347c4710307dab3ff0ae31b6fcd5104.bindPopup(popup_f61ce6dbe9099bfc860d2242a1ec5f44)
+        ;
+
+        
+    
+    
+            circle_marker_3347c4710307dab3ff0ae31b6fcd5104.bindTooltip(
+                `<div>
+                     5. CA LA NENA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d887cff8d7136e5f0e0ff9c1fc50b1d9 = L.circleMarker(
+                [41.9284, 2.3012],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_6f22940540522eb74c919de4dadd4236 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf3e5bd3927211e549553d7d8cec0c20 = $(`<div id="html_bf3e5bd3927211e549553d7d8cec0c20" style="width: 100.0%; height: 100.0%;"><b>BAR KARNAK</b><br>FOLGUEROLES<br>Palets: 0.3</div>`)[0];
+                popup_6f22940540522eb74c919de4dadd4236.setContent(html_bf3e5bd3927211e549553d7d8cec0c20);
+            
+        
+
+        circle_marker_d887cff8d7136e5f0e0ff9c1fc50b1d9.bindPopup(popup_6f22940540522eb74c919de4dadd4236)
+        ;
+
+        
+    
+    
+            circle_marker_d887cff8d7136e5f0e0ff9c1fc50b1d9.bindTooltip(
+                `<div>
+                     6. BAR KARNAK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1139acb30b26927ebf4628697beaaf82 = L.circleMarker(
+                [41.9279, 2.3008],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_9c71c5e9328d1367e0ec881fa5c40992 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb3d3636c78ec285f7db262637025241 = $(`<div id="html_bb3d3636c78ec285f7db262637025241" style="width: 100.0%; height: 100.0%;"><b>L'ESPAI RESTAURANT</b><br>FOLGUEROLES<br>Palets: 0.35</div>`)[0];
+                popup_9c71c5e9328d1367e0ec881fa5c40992.setContent(html_bb3d3636c78ec285f7db262637025241);
+            
+        
+
+        circle_marker_1139acb30b26927ebf4628697beaaf82.bindPopup(popup_9c71c5e9328d1367e0ec881fa5c40992)
+        ;
+
+        
+    
+    
+            circle_marker_1139acb30b26927ebf4628697beaaf82.bindTooltip(
+                `<div>
+                     7. L'ESPAI RESTAURANT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ed764c7182bb22cca5ab2f1add7bdca = L.circleMarker(
+                [41.9275, 2.3005],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_5e66e3444c80f53b8900a55dbe32bf8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88950592f6f01cb10a5fc3d1a4eebae3 = $(`<div id="html_88950592f6f01cb10a5fc3d1a4eebae3" style="width: 100.0%; height: 100.0%;"><b>LA COCA DE FOLGUEROLES</b><br>FOLGUEROLES<br>Palets: 0.15</div>`)[0];
+                popup_5e66e3444c80f53b8900a55dbe32bf8e.setContent(html_88950592f6f01cb10a5fc3d1a4eebae3);
+            
+        
+
+        circle_marker_3ed764c7182bb22cca5ab2f1add7bdca.bindPopup(popup_5e66e3444c80f53b8900a55dbe32bf8e)
+        ;
+
+        
+    
+    
+            circle_marker_3ed764c7182bb22cca5ab2f1add7bdca.bindTooltip(
+                `<div>
+                     8. LA COCA DE FOLGUEROLES
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a9b897769509c86800222ff23776816 = L.circleMarker(
+                [41.9281, 2.3015],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_c5c86faa9819d469e5cbe2f68c832d56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d95683bee7d91dcece73cb8dd23e955 = $(`<div id="html_3d95683bee7d91dcece73cb8dd23e955" style="width: 100.0%; height: 100.0%;"><b>CAL CISTELLER</b><br>FOLGUEROLES<br>Palets: 0.25</div>`)[0];
+                popup_c5c86faa9819d469e5cbe2f68c832d56.setContent(html_3d95683bee7d91dcece73cb8dd23e955);
+            
+        
+
+        circle_marker_7a9b897769509c86800222ff23776816.bindPopup(popup_c5c86faa9819d469e5cbe2f68c832d56)
+        ;
+
+        
+    
+    
+            circle_marker_7a9b897769509c86800222ff23776816.bindTooltip(
+                `<div>
+                     9. CAL CISTELLER
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10d40e568ae1572ec410e2003a6c1b22 = L.circleMarker(
+                [41.9452, 2.3198],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_60b0018f91fc855a4fb11ee5fd92d2cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e43da388c2e445ed6eec82e4d5d26071 = $(`<div id="html_e43da388c2e445ed6eec82e4d5d26071" style="width: 100.0%; height: 100.0%;"><b>BAR PAVELLO ST JULIA</b><br>SANT JULIÀ DE VILATORTA<br>Palets: 0.2</div>`)[0];
+                popup_60b0018f91fc855a4fb11ee5fd92d2cc.setContent(html_e43da388c2e445ed6eec82e4d5d26071);
+            
+        
+
+        circle_marker_10d40e568ae1572ec410e2003a6c1b22.bindPopup(popup_60b0018f91fc855a4fb11ee5fd92d2cc)
+        ;
+
+        
+    
+    
+            circle_marker_10d40e568ae1572ec410e2003a6c1b22.bindTooltip(
+                `<div>
+                     10. BAR PAVELLO ST JULIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3dd34418f77ff9bd9afe4b8b34463d2 = L.circleMarker(
+                [41.9448, 2.3192],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_8d5bc872a76d1f17b5919ff90ef79deb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20ec9bf271c269083aff6c1588813a5d = $(`<div id="html_20ec9bf271c269083aff6c1588813a5d" style="width: 100.0%; height: 100.0%;"><b>BAR EL TUPÍ</b><br>SANT JULIÀ DE VILATORTA<br>Palets: 0.4</div>`)[0];
+                popup_8d5bc872a76d1f17b5919ff90ef79deb.setContent(html_20ec9bf271c269083aff6c1588813a5d);
+            
+        
+
+        circle_marker_c3dd34418f77ff9bd9afe4b8b34463d2.bindPopup(popup_8d5bc872a76d1f17b5919ff90ef79deb)
+        ;
+
+        
+    
+    
+            circle_marker_c3dd34418f77ff9bd9afe4b8b34463d2.bindTooltip(
+                `<div>
+                     11. BAR EL TUPÍ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a76540d597dced18a28b9fc1d81ceddb = L.circleMarker(
+                [41.9455, 2.3205],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_4137066b94d9c15bb3a35238bf0c56d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_565646a6baaed4445dd42b4b106a2fe9 = $(`<div id="html_565646a6baaed4445dd42b4b106a2fe9" style="width: 100.0%; height: 100.0%;"><b>MAS L'ALBAREDA</b><br>SANT JULIÀ DE VILATORTA<br>Palets: 0.25</div>`)[0];
+                popup_4137066b94d9c15bb3a35238bf0c56d8.setContent(html_565646a6baaed4445dd42b4b106a2fe9);
+            
+        
+
+        circle_marker_a76540d597dced18a28b9fc1d81ceddb.bindPopup(popup_4137066b94d9c15bb3a35238bf0c56d8)
+        ;
+
+        
+    
+    
+            circle_marker_a76540d597dced18a28b9fc1d81ceddb.bindTooltip(
+                `<div>
+                     12. MAS L'ALBAREDA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dabdb6ea918f670df5fe59bf7380de75 = L.circleMarker(
+                [41.9443, 2.3188],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_6d005b2f64377f0a594a89898f9fa946 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29c94e2f6a65fa15db7bc2dd1662b9c9 = $(`<div id="html_29c94e2f6a65fa15db7bc2dd1662b9c9" style="width: 100.0%; height: 100.0%;"><b>BAR NURIA ST.JULIA</b><br>SANT JULIÀ DE VILATORTA<br>Palets: 0.9</div>`)[0];
+                popup_6d005b2f64377f0a594a89898f9fa946.setContent(html_29c94e2f6a65fa15db7bc2dd1662b9c9);
+            
+        
+
+        circle_marker_dabdb6ea918f670df5fe59bf7380de75.bindPopup(popup_6d005b2f64377f0a594a89898f9fa946)
+        ;
+
+        
+    
+    
+            circle_marker_dabdb6ea918f670df5fe59bf7380de75.bindTooltip(
+                `<div>
+                     13. BAR NURIA ST.JULIA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1cdb0ac01f4a06ca6c7dbda1f56e5c96 = L.circleMarker(
+                [41.946, 2.321],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_a49a5e4d6fdaf31e60b9faab6fb69eb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2681692e4f8fed51b7b6d412c4f74cb5 = $(`<div id="html_2681692e4f8fed51b7b6d412c4f74cb5" style="width: 100.0%; height: 100.0%;"><b>CAL TEIXIDOR</b><br>SANT JULIÀ DE VILATORTA<br>Palets: 0.7</div>`)[0];
+                popup_a49a5e4d6fdaf31e60b9faab6fb69eb4.setContent(html_2681692e4f8fed51b7b6d412c4f74cb5);
+            
+        
+
+        circle_marker_1cdb0ac01f4a06ca6c7dbda1f56e5c96.bindPopup(popup_a49a5e4d6fdaf31e60b9faab6fb69eb4)
+        ;
+
+        
+    
+    
+            circle_marker_1cdb0ac01f4a06ca6c7dbda1f56e5c96.bindTooltip(
+                `<div>
+                     14. CAL TEIXIDOR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_416a617053f35660b0e762ee6578692a = L.circleMarker(
+                [41.932, 2.249],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_c3fabcacd42d42c62e117403994d0fbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ccd24fb60e0ce8b614695e9c2f56ee3 = $(`<div id="html_9ccd24fb60e0ce8b614695e9c2f56ee3" style="width: 100.0%; height: 100.0%;"><b>MGA GP VIC</b><br>VIC<br>Palets: 0.5</div>`)[0];
+                popup_c3fabcacd42d42c62e117403994d0fbf.setContent(html_9ccd24fb60e0ce8b614695e9c2f56ee3);
+            
+        
+
+        circle_marker_416a617053f35660b0e762ee6578692a.bindPopup(popup_c3fabcacd42d42c62e117403994d0fbf)
+        ;
+
+        
+    
+    
+            circle_marker_416a617053f35660b0e762ee6578692a.bindTooltip(
+                `<div>
+                     15. MGA GP VIC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_196b89b33d5da0b31992eeb01908be57 = L.circleMarker(
+                [41.9318, 2.2485],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_e3f29ac8ef88cfc72046ff1867f32572 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e35231e43ed5f4f68ae8971e37270ef2 = $(`<div id="html_e35231e43ed5f4f68ae8971e37270ef2" style="width: 100.0%; height: 100.0%;"><b>GUSTUM AREAS 1</b><br>VIC<br>Palets: 0.6</div>`)[0];
+                popup_e3f29ac8ef88cfc72046ff1867f32572.setContent(html_e35231e43ed5f4f68ae8971e37270ef2);
+            
+        
+
+        circle_marker_196b89b33d5da0b31992eeb01908be57.bindPopup(popup_e3f29ac8ef88cfc72046ff1867f32572)
+        ;
+
+        
+    
+    
+            circle_marker_196b89b33d5da0b31992eeb01908be57.bindTooltip(
+                `<div>
+                     16. GUSTUM AREAS 1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3a53b4a64c05bb7f4208d673b0af055 = L.circleMarker(
+                [41.9316, 2.2483],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_a4269e13bc277782cda480b495d75621 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ec7e30f0bb9a67eb9b0524f7fc18ff5 = $(`<div id="html_5ec7e30f0bb9a67eb9b0524f7fc18ff5" style="width: 100.0%; height: 100.0%;"><b>GUSTUM AREAS 2</b><br>VIC<br>Palets: 0.6</div>`)[0];
+                popup_a4269e13bc277782cda480b495d75621.setContent(html_5ec7e30f0bb9a67eb9b0524f7fc18ff5);
+            
+        
+
+        circle_marker_a3a53b4a64c05bb7f4208d673b0af055.bindPopup(popup_a4269e13bc277782cda480b495d75621)
+        ;
+
+        
+    
+    
+            circle_marker_a3a53b4a64c05bb7f4208d673b0af055.bindTooltip(
+                `<div>
+                     17. GUSTUM AREAS 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0017e127351bef44b9f4cb3e6581c0f1 = L.circleMarker(
+                [41.9304, 2.2538],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_a102976615d1ddb3144e70b947face9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6444c187aec19a90b98ebae1ab070c1f = $(`<div id="html_6444c187aec19a90b98ebae1ab070c1f" style="width: 100.0%; height: 100.0%;"><b>SNACK (VIC)</b><br>VIC<br>Palets: 1.45</div>`)[0];
+                popup_a102976615d1ddb3144e70b947face9d.setContent(html_6444c187aec19a90b98ebae1ab070c1f);
+            
+        
+
+        circle_marker_0017e127351bef44b9f4cb3e6581c0f1.bindPopup(popup_a102976615d1ddb3144e70b947face9d)
+        ;
+
+        
+    
+    
+            circle_marker_0017e127351bef44b9f4cb3e6581c0f1.bindTooltip(
+                `<div>
+                     18. SNACK (VIC)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f91ec8e843a4142513b3da155246d0c = L.circleMarker(
+                [41.931, 2.251],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_0fdcc43a54a2a590c40ceb4e165dbad2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbc9f1612a6ed2a1a2d6eea6fbc36285 = $(`<div id="html_cbc9f1612a6ed2a1a2d6eea6fbc36285" style="width: 100.0%; height: 100.0%;"><b>BAR LA PISTA</b><br>VIC<br>Palets: 0.3</div>`)[0];
+                popup_0fdcc43a54a2a590c40ceb4e165dbad2.setContent(html_cbc9f1612a6ed2a1a2d6eea6fbc36285);
+            
+        
+
+        circle_marker_2f91ec8e843a4142513b3da155246d0c.bindPopup(popup_0fdcc43a54a2a590c40ceb4e165dbad2)
+        ;
+
+        
+    
+    
+            circle_marker_2f91ec8e843a4142513b3da155246d0c.bindTooltip(
+                `<div>
+                     19. BAR LA PISTA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be7d97e058c8bdace09c29c060870335 = L.circleMarker(
+                [41.9298, 2.2545],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_db21b71cb014ce6caa1dee9ffe5f807e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0aea86a56f5baab91289b6072c362db6 = $(`<div id="html_0aea86a56f5baab91289b6072c362db6" style="width: 100.0%; height: 100.0%;"><b>EL CALIU RESTAURANT</b><br>VIC<br>Palets: 1.2</div>`)[0];
+                popup_db21b71cb014ce6caa1dee9ffe5f807e.setContent(html_0aea86a56f5baab91289b6072c362db6);
+            
+        
+
+        circle_marker_be7d97e058c8bdace09c29c060870335.bindPopup(popup_db21b71cb014ce6caa1dee9ffe5f807e)
+        ;
+
+        
+    
+    
+            circle_marker_be7d97e058c8bdace09c29c060870335.bindTooltip(
+                `<div>
+                     20. EL CALIU RESTAURANT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_501a2ba2c39d1cc3747678ed0950e8c5 = L.circleMarker(
+                [41.9315, 2.252],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_0bb63d058bc55c58914f0e407f0e0659 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2032e6a2877f5a95dbf44796989f423 = $(`<div id="html_f2032e6a2877f5a95dbf44796989f423" style="width: 100.0%; height: 100.0%;"><b>VINS I BEGUDES REMEI</b><br>VIC<br>Palets: 0.4</div>`)[0];
+                popup_0bb63d058bc55c58914f0e407f0e0659.setContent(html_f2032e6a2877f5a95dbf44796989f423);
+            
+        
+
+        circle_marker_501a2ba2c39d1cc3747678ed0950e8c5.bindPopup(popup_0bb63d058bc55c58914f0e407f0e0659)
+        ;
+
+        
+    
+    
+            circle_marker_501a2ba2c39d1cc3747678ed0950e8c5.bindTooltip(
+                `<div>
+                     21. VINS I BEGUDES REMEI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8885fb65442273628801ef715a0996b2 = L.circleMarker(
+                [41.9308, 2.253],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_bf88f0d445646798ac042fe514714d8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39bb060945daa865ae24760df9bcdde6 = $(`<div id="html_39bb060945daa865ae24760df9bcdde6" style="width: 100.0%; height: 100.0%;"><b>BAR SOL NOU</b><br>VIC<br>Palets: 0.25</div>`)[0];
+                popup_bf88f0d445646798ac042fe514714d8a.setContent(html_39bb060945daa865ae24760df9bcdde6);
+            
+        
+
+        circle_marker_8885fb65442273628801ef715a0996b2.bindPopup(popup_bf88f0d445646798ac042fe514714d8a)
+        ;
+
+        
+    
+    
+            circle_marker_8885fb65442273628801ef715a0996b2.bindTooltip(
+                `<div>
+                     22. BAR SOL NOU
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_431a4b6420ad1e7e61d8da58da4326da = L.circleMarker(
+                [41.9302, 2.2542],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_515b06d831051e467f2d32e1056058c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55abc786169f3f6997a0e3161e8c7db5 = $(`<div id="html_55abc786169f3f6997a0e3161e8c7db5" style="width: 100.0%; height: 100.0%;"><b>BAR PRIEGO</b><br>VIC<br>Palets: 0.2</div>`)[0];
+                popup_515b06d831051e467f2d32e1056058c3.setContent(html_55abc786169f3f6997a0e3161e8c7db5);
+            
+        
+
+        circle_marker_431a4b6420ad1e7e61d8da58da4326da.bindPopup(popup_515b06d831051e467f2d32e1056058c3)
+        ;
+
+        
+    
+    
+            circle_marker_431a4b6420ad1e7e61d8da58da4326da.bindTooltip(
+                `<div>
+                     23. BAR PRIEGO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a625110022a29df1ec2df6447c72fb2a = L.circleMarker(
+                [41.9295, 2.255],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_bc2103ecb1f2beb43d130f18fb5305a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e6871ab5ba2a167599f9c6e1e19cb0c = $(`<div id="html_1e6871ab5ba2a167599f9c6e1e19cb0c" style="width: 100.0%; height: 100.0%;"><b>LA TAVERNA D'EN NORTON</b><br>VIC<br>Palets: 0.35</div>`)[0];
+                popup_bc2103ecb1f2beb43d130f18fb5305a5.setContent(html_1e6871ab5ba2a167599f9c6e1e19cb0c);
+            
+        
+
+        circle_marker_a625110022a29df1ec2df6447c72fb2a.bindPopup(popup_bc2103ecb1f2beb43d130f18fb5305a5)
+        ;
+
+        
+    
+    
+            circle_marker_a625110022a29df1ec2df6447c72fb2a.bindTooltip(
+                `<div>
+                     24. LA TAVERNA D'EN NORTON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d7fdba4cfd506ef5e4dfe290af25185 = L.circleMarker(
+                [41.5038, 2.2701],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+        var popup_b35a934fb151e2d8886326cd0146a4eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b614009bb7fbb407e20292e4acdb6369 = $(`<div id="html_b614009bb7fbb407e20292e4acdb6369" style="width: 100.0%; height: 100.0%;"><b>412 COFFEE BEER</b><br>SANT FOST DE CAMPSENTELLES<br>Palets: 0.8</div>`)[0];
+                popup_b35a934fb151e2d8886326cd0146a4eb.setContent(html_b614009bb7fbb407e20292e4acdb6369);
+            
+        
+
+        circle_marker_5d7fdba4cfd506ef5e4dfe290af25185.bindPopup(popup_b35a934fb151e2d8886326cd0146a4eb)
+        ;
+
+        
+    
+    
+            circle_marker_5d7fdba4cfd506ef5e4dfe290af25185.bindTooltip(
+                `<div>
+                     25. 412 COFFEE BEER
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1c93fb915085a2185445c54ae6edfe62 = L.polyline(
+                [[41.5444, 2.2105], [41.9102, 2.2801], [41.9098, 2.2795], [41.9095, 2.279], [41.9088, 2.281], [41.9092, 2.2798], [41.9284, 2.3012], [41.9279, 2.3008], [41.9275, 2.3005], [41.9281, 2.3015], [41.9452, 2.3198], [41.9448, 2.3192], [41.9455, 2.3205], [41.9443, 2.3188], [41.946, 2.321], [41.932, 2.249], [41.9318, 2.2485], [41.9316, 2.2483], [41.9304, 2.2538], [41.931, 2.251], [41.9298, 2.2545], [41.9315, 2.252], [41.9308, 2.253], [41.9302, 2.2542], [41.9295, 2.255], [41.5038, 2.2701], [41.5444, 2.2105]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_dcbee873f695ad366c8138269b9fb648);
+        
+    
+            poly_line_1c93fb915085a2185445c54ae6edfe62.bindTooltip(
+                `<div>
+                     Ruta baseline (ordre actual)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
