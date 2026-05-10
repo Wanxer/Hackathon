@@ -1,0 +1,11 @@
+pandas
+openpyxl
+geopy
+folium
+requests
+certifi
+ortools
+plotly
+streamlit
+matplotlib
+numpy
