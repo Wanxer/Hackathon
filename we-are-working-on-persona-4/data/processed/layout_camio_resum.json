@@ -1,0 +1,10 @@
+{
+  "route_id": "DR0051",
+  "date": "2026-02-05",
+  "number_of_clients": 24,
+  "total_used_pallets": 6.0,
+  "total_capacity_pallets": 6.0,
+  "total_demand_pallets": 11.9,
+  "total_estimated_weight_kg": 1788.7,
+  "has_overflow": true
+}

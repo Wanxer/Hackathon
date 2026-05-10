@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <title>Pla de càrrega i repartiment</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; color: #222; background: #f3f4f6; }
+    .page { max-width: 1040px; margin: 0 auto; background: white; padding: 34px 46px; }
+    h1 { color: #b91c1c; margin-bottom: 4px; font-size: 32px; }
+    h2 { margin-top: 26px; border-bottom: 3px solid #f2b705; padding-bottom: 6px; }
+    .meta { color: #555; margin-bottom: 18px; font-weight: 700; }
+    table { border-collapse: collapse; width: 100%; font-size: 12px; }
+    th { background: #2b2b2b; color: white; padding: 8px; text-align: left; }
+    td { border-bottom: 1px solid #ddd; padding: 8px; vertical-align: top; }
+    .truck { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .zone { color: white; border-radius: 8px; padding: 10px; min-height: 96px; }
+    .zone-code { font-size: 18px; font-weight: 900; }
+    .zone-role { font-weight: 800; }
+    .zone ul { margin: 6px 0 0 16px; padding: 0; }
+    .frontrear { text-align: center; font-weight: 900; margin: 10px 0; }
+    .note { background: #fef3c7; border-left: 5px solid #f2b705; padding: 12px; margin: 14px 0; }
+    .instructions li { margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+<main class="page">
+  <h1>Pla de càrrega i repartiment</h1>
+  <div class="meta">Ruta DR0051 · 2026-02-05 · Transport 11443257 · Repartidor 855190</div>
+
+  <h2>Instruccions generals</h2>
+  <div class="note">
+    <ul class="instructions">
+      <li>Obrir la lona lateral.</li>
+      <li>Buscar la zona indicada per cada parada.</li>
+      <li>Descarregar primer els productes visibles i accessibles.</li>
+      <li>Mantenir els productes pesants a la part baixa del palet.</li>
+      <li>Reservar R3 per als retornables.</li>
+      <li>Els retornables es van col·locant a R3 a mesura que es buida el camió.</li>
+    </ul>
+  </div>
+
+  <h2>Distribució del camió</h2>
+  <div class="note" style="font-size:12px;">1 posició = 1 palet · Capacitat total: 6 posicions de palet</div>
+  <div class="frontrear">DAVANT / CABINA</div>
+  <div class="truck">
+    
+      <div class="zone" style="background: #166534;">
+        <div class="zone-code">L1</div>
+        <div class="zone-role">Clients específics</div>
+        <div style="color:rgba(255,255,255,.92);margin-top:4px;">Ocupació: 1 / 1 palet</div>
+        <ul><li>CLUB BASQUET VIC</li><li>GUSTUM AREAS 1 (LLEIDA-GIRONA)</li><li>MGA GP VIC</li></ul>
+      </div>
+    
+      <div class="zone" style="background: #b91c1c;">
+        <div class="zone-code">L2</div>
+        <div class="zone-role">Productes comuns</div>
+        <div style="color:rgba(255,255,255,.92);margin-top:4px;">Ocupació: 1 / 1 palet</div>
+        <ul><li>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</li></ul>
+      </div>
+    
+      <div class="zone" style="background: #2b2b2b;">
+        <div class="zone-code">L3</div>
+        <div class="zone-role">Mixta</div>
+        <div style="color:rgba(255,255,255,.92);margin-top:4px;">Ocupació: 1 / 1 palet</div>
+        <ul><li>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</li></ul>
+      </div>
+    
+      <div class="zone" style="background: #2b2b2b;">
+        <div class="zone-code">R1</div>
+        <div class="zone-role">Mixta</div>
+        <div style="color:rgba(255,255,255,.92);margin-top:4px;">Ocupació: 1 / 1 palet</div>
+        <ul><li>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</li><li>AGUA VERI 1,5L PET CAJA 12U.</li><li>AGUA VERI 1/2 PET CAJA 24U. T.TH</li></ul>
+      </div>
+    
+      <div class="zone" style="background: #b91c1c;">
+        <div class="zone-code">R2</div>
+        <div class="zone-role">Productes comuns</div>
+        <div style="color:rgba(255,255,255,.92);margin-top:4px;">Ocupació: 1 / 1 palet</div>
+        <ul><li>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</li></ul>
+      </div>
+    
+      <div class="zone" style="background: #6d28d9;">
+        <div class="zone-code">R3</div>
+        <div class="zone-role">Retornables</div>
+        <div style="color:rgba(255,255,255,.92);margin-top:4px;">Ocupació: 1 / 1 palet</div>
+        <ul><li>EL CALIU RESTAURANT (VIC)</li><li>PULIT, S.A</li><li>BAR TAVERNA D'PAS</li></ul>
+      </div>
+    
+  </div>
+  <div class="frontrear">DARRERE</div>
+  <div class="conclusion" style="background:#fff1f2;border-left:5px solid #b91c1c;padding:16px;margin-top:14px;"><strong>⚠️ Excés de càrrega estimat: 5.90 palets</strong><p style="margin:6px 0">La càrrega estimada (11.90 palets) supera la capacitat física de 6 palets. Cal segon viatge, camió més gran o reduir càrrega.</p><p style="margin:6px 0">Cal planificar segon viatge o vehicle amb més capacitat.</p></div>
+
+  <h2>Taula de zones</h2>
+  <table>
+    <tr><th>Zona</th><th>Ús</th><th>Contingut principal</th><th>Instrucció</th></tr>
+    
+      <tr><td>L1</td><td>Clients específics</td><td>CLUB BASQUET VIC; GUSTUM AREAS 1 (LLEIDA-GIRONA); MGA GP VIC</td><td>Zona per clients concrets segons l'ordre de ruta.</td></tr>
+    
+      <tr><td>L2</td><td>Productes comuns</td><td>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</td><td>Zona compartida per productes comuns de molts clients.</td></tr>
+    
+      <tr><td>L3</td><td>Mixta</td><td>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</td><td>Mantenir accessible des de la lona lateral.</td></tr>
+    
+      <tr><td>R1</td><td>Mixta</td><td>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13; AGUA VERI 1,5L PET CAJA 12U.; AGUA VERI 1/2 PET CAJA 24U. T.TH</td><td>Mantenir accessible des de la lona lateral.</td></tr>
+    
+      <tr><td>R2</td><td>Productes comuns</td><td>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</td><td>Zona compartida per productes comuns de molts clients.</td></tr>
+    
+      <tr><td>R3</td><td>Retornables</td><td>EL CALIU RESTAURANT (VIC); PULIT, S.A; BAR TAVERNA D'PAS</td><td>Espai reservat per envasos i caixes retornables.</td></tr>
+    
+  </table>
+
+  <h2>Ordre de parades</h2>
+  <table>
+    <tr><th>#</th><th>Client</th><th>ID client</th><th>Entrega</th><th>Retornables</th><th>Zona</th><th>Instrucció</th></tr>
+    
+      <tr>
+        <td>1</td><td>BAR PRIEGO</td><td>9100374304</td>
+        <td>56</td><td>17</td><td>L1</td>
+        <td>Recollida alta de retornables. Reservar espai a R3.</td>
+      </tr>
+    
+      <tr>
+        <td>2</td><td>SAZON DE LOS APOLOS</td><td>9100752860</td>
+        <td>20</td><td>6</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>3</td><td>VINS I BEGUDES REMEI</td><td>9100158925</td>
+        <td>17</td><td>5</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>4</td><td>BAR ÑAM LLODO</td><td>9100740503</td>
+        <td>10</td><td>3</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>5</td><td>GUSTUM AREAS 1 (LLEIDA-GIRONA)</td><td>9100058446</td>
+        <td>30</td><td>9</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>6</td><td>GUSTUM AREAS 2 (GIRONA-LLEIDA)</td><td>9100058476</td>
+        <td>26</td><td>8</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>7</td><td>PADEL OSONA GURB</td><td>9100397795</td>
+        <td>31</td><td>10</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>8</td><td>CLUB BASQUET VIC</td><td>9100517701</td>
+        <td>67</td><td>21</td><td>L1</td>
+        <td>Recollida alta de retornables. Reservar espai a R3.</td>
+      </tr>
+    
+      <tr>
+        <td>9</td><td>MGA GP VIC</td><td>136675</td>
+        <td>1</td><td>0</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>10</td><td>AURIAL PADEL</td><td>9100684868</td>
+        <td>29</td><td>9</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>11</td><td>PULIT, S.A</td><td>9100579824</td>
+        <td>8</td><td>2</td><td>L2/R2 compartida</td>
+        <td>Zona central. Revisar productes compartits.</td>
+      </tr>
+    
+      <tr>
+        <td>12</td><td>BAR TAVERNA D'PAS</td><td>9100610240</td>
+        <td>22</td><td>7</td><td>L2/R2 compartida</td>
+        <td>Zona central. Revisar productes compartits.</td>
+      </tr>
+    
+      <tr>
+        <td>13</td><td>BAR CAMP DE TIR</td><td>9100759429</td>
+        <td>9</td><td>3</td><td>L2/R2 compartida</td>
+        <td>Zona central. Revisar productes compartits.</td>
+      </tr>
+    
+      <tr>
+        <td>14</td><td>RUKU RESTAURANT</td><td>9100746500</td>
+        <td>28</td><td>9</td><td>L2/R2 compartida</td>
+        <td>Zona central. Revisar productes compartits.</td>
+      </tr>
+    
+      <tr>
+        <td>15</td><td>LA TAVERNA D'EN NORTON</td><td>9100374429</td>
+        <td>26</td><td>8</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>16</td><td>SNACK (VIC)</td><td>9100058727</td>
+        <td>96</td><td>30</td><td>L2/R2 compartida</td>
+        <td>Recollida alta de retornables. Reservar espai a R3.</td>
+      </tr>
+    
+      <tr>
+        <td>17</td><td>CA LA MEI</td><td>9100700207</td>
+        <td>28</td><td>9</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>18</td><td>Vacanal Jubany - Hamburgueseria</td><td>9100727009</td>
+        <td>26</td><td>8</td><td>L2/R2 compartida</td>
+        <td>Zona central. Revisar productes compartits.</td>
+      </tr>
+    
+      <tr>
+        <td>19</td><td>EL CALIU RESTAURANT (VIC)</td><td>9100134828</td>
+        <td>102</td><td>32</td><td>L2/R2 compartida</td>
+        <td>Recollida alta de retornables. Reservar espai a R3.</td>
+      </tr>
+    
+      <tr>
+        <td>20</td><td>CASINO DE VIC</td><td>9100564797</td>
+        <td>60</td><td>19</td><td>L2/R2 compartida</td>
+        <td>Recollida alta de retornables. Reservar espai a R3.</td>
+      </tr>
+    
+      <tr>
+        <td>21</td><td>BAR SOL NOU</td><td>9100324575</td>
+        <td>56</td><td>17</td><td>L2/R2 compartida</td>
+        <td>Recollida alta de retornables. Reservar espai a R3.</td>
+      </tr>
+    
+      <tr>
+        <td>22</td><td>BAR LA PISTA</td><td>9100058850</td>
+        <td>40</td><td>12</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>23</td><td>ALOE</td><td>9100389125</td>
+        <td>9</td><td>3</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+      <tr>
+        <td>24</td><td>ENTREPA I PA</td><td>9100745910</td>
+        <td>40</td><td>12</td><td>L1</td>
+        <td>Obrir la lona lateral i descarregar des de la zona indicada.</td>
+      </tr>
+    
+  </table>
+</main>
+</body>
+</html>

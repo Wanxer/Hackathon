@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <title>Damm Smart Planner - Informe executiu</title>
+  <style>
+    body { font-family: Inter, Arial, sans-serif; color: #242424; margin: 0; background: #f3f4f6; }
+    .page { max-width: 1080px; margin: 0 auto; background: white; }
+    .cover { background: #2b2b2b; color: white; padding: 42px 52px; border-top: 8px solid #b91c1c; }
+    h1 { margin: 0; color: white; font-size: 38px; letter-spacing: .2px; }
+    .tagline { color: #fef3c7; font-size: 18px; margin-top: 8px; }
+    .meta { color: #e5e7eb; margin-top: 18px; font-weight: 700; }
+    .content { padding: 36px 52px 48px 52px; }
+    h2 { color: #2b2b2b; border-bottom: 3px solid #f2b705; padding-bottom: 7px; margin-top: 32px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
+    .card { border-radius: 10px; padding: 16px; background: #fff8e6; border: 1px solid #f3d46b; }
+    .card.red { background: #fff1f2; border-color: #fecdd3; }
+    .label { font-size: 12px; text-transform: uppercase; color: #6b7280; font-weight: 800; }
+    .value { font-size: 24px; font-weight: 900; color: #2b2b2b; margin-top: 4px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 14px; font-size: 13px; }
+    th { background: #2b2b2b; color: white; text-align: left; padding: 10px; }
+    td { border-bottom: 1px solid #e5e7eb; padding: 10px; vertical-align: top; }
+    .note { background: #fef3c7; border-left: 5px solid #f2b705; padding: 14px; margin-top: 14px; font-weight: 600; }
+    .truck { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+    .zone { color: white; border-radius: 8px; padding: 12px; min-height: 122px; }
+    .zone-code { font-size: 20px; font-weight: 900; }
+    .zone-role { font-weight: 800; margin-top: 2px; }
+    .zone-use { color: rgba(255,255,255,.92); margin-top: 4px; }
+    .zone ul { margin: 8px 0 0 16px; padding: 0; }
+    .zone li { margin: 2px 0; }
+    .frontrear { text-align: center; font-weight: 900; color: #2b2b2b; margin: 12px 0; }
+    ul li { margin-bottom: 7px; }
+    .conclusion { background: #fff1f2; border-left: 5px solid #b91c1c; padding: 16px; margin-top: 16px; font-weight: 700; }
+    .footer { margin-top: 36px; color: #6b7280; font-size: 12px; }
+  </style>
+</head>
+<body>
+<main class="page">
+  <section class="cover">
+    <h1>Damm Smart Planner</h1>
+    <div class="tagline">Optimització de ruta i càrrega per a repartiments Damm més eficients</div>
+    <div class="meta">Ruta DR0051 · 2026-02-05 · Transport 11443257 · Repartidor 855190</div>
+  </section>
+  <section class="content">
+    <div class="grid">
+      
+      <div class="card red"><div class="label">Clients</div><div class="value">24</div></div>
+      
+      <div class="card "><div class="label">Distància original</div><div class="value">180,92 km</div></div>
+      
+      <div class="card "><div class="label">Distància optimitzada</div><div class="value">144,30 km</div></div>
+      
+      <div class="card red"><div class="label">Estalvi</div><div class="value">36,62 km</div></div>
+      
+      <div class="card red"><div class="label">Reducció de distància</div><div class="value">20,2%</div></div>
+      
+      <div class="card "><div class="label">Zones del camió</div><div class="value">6</div></div>
+      
+    </div>
+
+    <h2>Comparativa de ruta</h2>
+    <table>
+      <tr><th>Mètrica</th><th>Ruta original</th><th>Ruta optimitzada</th><th>Diferència</th><th>Interpretació</th></tr>
+      
+        <tr><td>Distància per carretera</td><td>180,92 km</td><td>144,30 km</td><td>36,62 km menys</td><td>KPI principal: menys quilòmetres conduïts.</td></tr>
+      
+        <tr><td>Temps de conducció</td><td>3,61 h</td><td>n/d</td><td>No es declara estalvi</td><td>No hi ha temps de conducció optimitzat exportat de forma comparable.</td></tr>
+      
+        <tr><td>Temps operatiu estimat</td><td>9,61 h</td><td>13,38 h</td><td>No comparable</td><td>Inclou supòsits de servei, espera o descàrrega; no és el KPI principal.</td></tr>
+      
+        <tr><td>Clients servits</td><td>24</td><td>24</td><td>0</td><td>Mateixos clients reals en els dos escenaris.</td></tr>
+      
+    </table>
+    <div class="note">El temps operatiu depèn dels supòsits de servei i espera. La mètrica comparable principal d'aquesta demo és la distància per carretera.</div>
+
+    <h2>Distribució del camió</h2>
+    <div class="note" style="font-size:13px;">1 posició = 1 palet · Capacitat total: 6 posicions de palet</div>
+    <div class="frontrear">DAVANT / CABINA</div>
+    <div class="truck">
+      
+        <div class="zone" style="background: #166534;">
+          <div class="zone-code">L1</div>
+          <div class="zone-role">Clients específics</div>
+          <div class="zone-use">Ocupació: 1 / 1 palet</div>
+          <ul><li>CLUB BASQUET VIC</li><li>GUSTUM AREAS 1 (LLEIDA-GIRONA)</li><li>MGA GP VIC</li></ul>
+        </div>
+      
+        <div class="zone" style="background: #b91c1c;">
+          <div class="zone-code">L2</div>
+          <div class="zone-role">Productes comuns</div>
+          <div class="zone-use">Ocupació: 1 / 1 palet</div>
+          <ul><li>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</li></ul>
+        </div>
+      
+        <div class="zone" style="background: #2b2b2b;">
+          <div class="zone-code">L3</div>
+          <div class="zone-role">Mixta</div>
+          <div class="zone-use">Ocupació: 1 / 1 palet</div>
+          <ul><li>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</li></ul>
+        </div>
+      
+      
+        <div class="zone" style="background: #2b2b2b;">
+          <div class="zone-code">R1</div>
+          <div class="zone-role">Mixta</div>
+          <div class="zone-use">Ocupació: 1 / 1 palet</div>
+          <ul><li>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</li><li>AGUA VERI 1,5L PET CAJA 12U.</li><li>AGUA VERI 1/2 PET CAJA 24U. T.TH</li></ul>
+        </div>
+      
+        <div class="zone" style="background: #b91c1c;">
+          <div class="zone-code">R2</div>
+          <div class="zone-role">Productes comuns</div>
+          <div class="zone-use">Ocupació: 1 / 1 palet</div>
+          <ul><li>CAJA DAMM+BOT.1/3RET VACIO EN P.PLAS.A13</li></ul>
+        </div>
+      
+        <div class="zone" style="background: #6d28d9;">
+          <div class="zone-code">R3</div>
+          <div class="zone-role">Retornables</div>
+          <div class="zone-use">Ocupació: 1 / 1 palet</div>
+          <ul><li>EL CALIU RESTAURANT (VIC)</li><li>PULIT, S.A</li><li>BAR TAVERNA D'PAS</li></ul>
+        </div>
+      
+    </div>
+    <div class="frontrear">DARRERE</div>
+    <div class="conclusion" style="background:#fff1f2;border-left:5px solid #b91c1c;padding:16px;margin-top:14px;"><strong>⚠️ Excés de càrrega estimat: 5.90 palets</strong><p style="margin:6px 0">La càrrega estimada (11.90 palets) supera la capacitat física de 6 palets. Cal segon viatge, camió més gran o reduir càrrega.</p><p style="margin:6px 0">Cal planificar segon viatge o vehicle amb més capacitat.</p></div>
+
+    <h2>Lògica de càrrega</h2>
+    <ul>
+      <li>Els productes comuns a més del 50% dels clients es col·loquen en una zona central compartida.</li>
+      <li>Els clients grans, amb més d'1 palet, tenen espai dedicat o més accessible.</li>
+      <li>Les primeres parades han de quedar fàcils d'agafar des de la lona lateral.</li>
+      <li>Els retornables es gestionen amb una zona dinàmica que es va omplint a mesura que es descarrega.</li>
+      <li>Els productes pesants van a la part inferior del palet.</li>
+    </ul>
+
+    <h2>Conclusió</h2>
+    <div class="conclusion">
+      El pla optimitzat redueix la distància per carretera en 36,62 km i manté els 24 clients reals de la ruta.
+      A més, incorpora una distribució de càrrega explicable perquè el repartidor pugui descarregar amb més ordre i menys confusió.
+    </div>
+    <div class="footer">Sortides generades: dashboard, mapa comparatiu final, informe executiu i pla de càrrega per al repartidor.</div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e16231f22e8ac9d1126e92f338d2aa66 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e16231f22e8ac9d1126e92f338d2aa66" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e16231f22e8ac9d1126e92f338d2aa66 = L.map(
+                "map_e16231f22e8ac9d1126e92f338d2aa66",
+                {
+                    center: [41.9164162, 2.24765164],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4d32a69d1290d96187a95501d5b530e9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4d32a69d1290d96187a95501d5b530e9.addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var poly_line_4d84b28299f1284bc276f588fa5ffe11 = L.polyline(
+                [[41.5444, 2.2105], [41.9211, 2.2498], [41.924354, 2.250692], [41.920984, 2.251159], [41.920584, 2.250764], [41.93425, 2.194306], [41.933278, 2.193306], [41.939926, 2.238415], [41.9375, 2.246], [41.939354, 2.254115], [41.942746, 2.251518], [41.932992, 2.261336], [41.935702, 2.259921], [41.973811, 2.271635], [41.929322, 2.256373], [41.929996, 2.255261], [41.930408, 2.253817], [41.931187, 2.254244], [41.930535, 2.255095], [41.929408, 2.253559], [41.930045, 2.253202], [41.925199, 2.253796], [41.927242, 2.255694], [41.924275, 2.260045], [41.921807, 2.256738], [41.5444, 2.2105]],
+                {"bubblingMouseEvents": true, "color": "#f2b705", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#f2b705", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            poly_line_4d84b28299f1284bc276f588fa5ffe11.bindTooltip(
+                `<div>
+                     Ruta optimitzada DR0051
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4119279855c654502a3a8d220f38bf95 = L.marker(
+                [41.5444, 2.2105],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var icon_b525ecd27e00761f09c7c770357501a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92d8f3b6856484c9ee1806f5583dd4fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6c003fc509a06eb2f48319483f801fe = $(`<div id="html_d6c003fc509a06eb2f48319483f801fe" style="width: 100.0%; height: 100.0%;"><b>0. DDI Mollet</b></div>`)[0];
+                popup_92d8f3b6856484c9ee1806f5583dd4fd.setContent(html_d6c003fc509a06eb2f48319483f801fe);
+            
+        
+
+        marker_4119279855c654502a3a8d220f38bf95.bindPopup(popup_92d8f3b6856484c9ee1806f5583dd4fd)
+        ;
+
+        
+    
+    
+            marker_4119279855c654502a3a8d220f38bf95.bindTooltip(
+                `<div>
+                     Dipòsit - DDI Mollet
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4119279855c654502a3a8d220f38bf95.setIcon(icon_b525ecd27e00761f09c7c770357501a9);
+            
+    
+            var marker_f37bf397c408b329b50495ffdedcec76 = L.marker(
+                [41.973811, 2.271635],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_0241aac8fe364cdab425a355f89d8256 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e13\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_db258211e0ad0e6fcbb22704cacc9832 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c081f8cbc307f1e30fbeaad74f0cf3f4 = $(`<div id="html_c081f8cbc307f1e30fbeaad74f0cf3f4" style="width: 100.0%; height: 100.0%;"><b>13. BAR CAMP DE TIR</b><br>GURB</div>`)[0];
+                popup_db258211e0ad0e6fcbb22704cacc9832.setContent(html_c081f8cbc307f1e30fbeaad74f0cf3f4);
+            
+        
+
+        marker_f37bf397c408b329b50495ffdedcec76.bindPopup(popup_db258211e0ad0e6fcbb22704cacc9832)
+        ;
+
+        
+    
+    
+            marker_f37bf397c408b329b50495ffdedcec76.bindTooltip(
+                `<div>
+                     13. BAR CAMP DE TIR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f37bf397c408b329b50495ffdedcec76.setIcon(div_icon_0241aac8fe364cdab425a355f89d8256);
+            
+    
+            var marker_2e181c3f4b39af3541ef96aa836a99d8 = L.marker(
+                [41.924354, 2.250692],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_578b5b48dc27d50304c385338e4b3a62 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e2\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f1b63a6f1861d2ac3985c784d7830083 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_773106c5c6dfc05bd9bdfb3c3336c674 = $(`<div id="html_773106c5c6dfc05bd9bdfb3c3336c674" style="width: 100.0%; height: 100.0%;"><b>2. SAZON DE LOS APOLOS</b><br>VIC</div>`)[0];
+                popup_f1b63a6f1861d2ac3985c784d7830083.setContent(html_773106c5c6dfc05bd9bdfb3c3336c674);
+            
+        
+
+        marker_2e181c3f4b39af3541ef96aa836a99d8.bindPopup(popup_f1b63a6f1861d2ac3985c784d7830083)
+        ;
+
+        
+    
+    
+            marker_2e181c3f4b39af3541ef96aa836a99d8.bindTooltip(
+                `<div>
+                     2. SAZON DE LOS APOLOS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e181c3f4b39af3541ef96aa836a99d8.setIcon(div_icon_578b5b48dc27d50304c385338e4b3a62);
+            
+    
+            var marker_f0e1b1a705cbeb5e0b39381b9d8c94ea = L.marker(
+                [41.929322, 2.256373],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_ada2e9e6b015f5b370e8b9322b5c3f3e = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e14\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_c8925e514d5856ac0c518f0d935d623c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96ca3c1e9c37f53d46a072e5bde4d552 = $(`<div id="html_96ca3c1e9c37f53d46a072e5bde4d552" style="width: 100.0%; height: 100.0%;"><b>14. RUKU RESTAURANT</b><br>VIC</div>`)[0];
+                popup_c8925e514d5856ac0c518f0d935d623c.setContent(html_96ca3c1e9c37f53d46a072e5bde4d552);
+            
+        
+
+        marker_f0e1b1a705cbeb5e0b39381b9d8c94ea.bindPopup(popup_c8925e514d5856ac0c518f0d935d623c)
+        ;
+
+        
+    
+    
+            marker_f0e1b1a705cbeb5e0b39381b9d8c94ea.bindTooltip(
+                `<div>
+                     14. RUKU RESTAURANT
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0e1b1a705cbeb5e0b39381b9d8c94ea.setIcon(div_icon_ada2e9e6b015f5b370e8b9322b5c3f3e);
+            
+    
+            var marker_1274c4731cfe9585b9a43ec5c660d1c9 = L.marker(
+                [41.921807, 2.256738],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_3cda44e04de47d4a15b6b1a1b3acf55e = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e24\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_dcca2359a0b3cfbb4804b39ff28e9534 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4974c81561113c664a8b1993405d9c8 = $(`<div id="html_d4974c81561113c664a8b1993405d9c8" style="width: 100.0%; height: 100.0%;"><b>24. ENTREPA I PA</b><br>VIC</div>`)[0];
+                popup_dcca2359a0b3cfbb4804b39ff28e9534.setContent(html_d4974c81561113c664a8b1993405d9c8);
+            
+        
+
+        marker_1274c4731cfe9585b9a43ec5c660d1c9.bindPopup(popup_dcca2359a0b3cfbb4804b39ff28e9534)
+        ;
+
+        
+    
+    
+            marker_1274c4731cfe9585b9a43ec5c660d1c9.bindTooltip(
+                `<div>
+                     24. ENTREPA I PA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1274c4731cfe9585b9a43ec5c660d1c9.setIcon(div_icon_3cda44e04de47d4a15b6b1a1b3acf55e);
+            
+    
+            var marker_46e707a0585f43e1c2ec0c87722205fd = L.marker(
+                [41.920584, 2.250764],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_9c1f2afde3d1041eafea843056ea0e05 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e4\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_e4840fc2ea3efa8d8c295980d6db52bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7947f2c0aed7dacecc2b7a170a67bd25 = $(`<div id="html_7947f2c0aed7dacecc2b7a170a67bd25" style="width: 100.0%; height: 100.0%;"><b>4. BAR ÑAM LLODO</b><br>VIC</div>`)[0];
+                popup_e4840fc2ea3efa8d8c295980d6db52bf.setContent(html_7947f2c0aed7dacecc2b7a170a67bd25);
+            
+        
+
+        marker_46e707a0585f43e1c2ec0c87722205fd.bindPopup(popup_e4840fc2ea3efa8d8c295980d6db52bf)
+        ;
+
+        
+    
+    
+            marker_46e707a0585f43e1c2ec0c87722205fd.bindTooltip(
+                `<div>
+                     4. BAR ÑAM LLODO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_46e707a0585f43e1c2ec0c87722205fd.setIcon(div_icon_9c1f2afde3d1041eafea843056ea0e05);
+            
+    
+            var marker_e1de38f6547cb9aa9026ba8b93c06a9b = L.marker(
+                [41.930535, 2.255095],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_69ab50d7d0f7da21c9150339acd3fc97 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e18\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_0bab2659e8ae0e027f308374ad186cd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4160f3563624e0bb49eeb55f4baa1ae1 = $(`<div id="html_4160f3563624e0bb49eeb55f4baa1ae1" style="width: 100.0%; height: 100.0%;"><b>18. Vacanal Jubany - Hamburgueseria</b><br>VIC</div>`)[0];
+                popup_0bab2659e8ae0e027f308374ad186cd3.setContent(html_4160f3563624e0bb49eeb55f4baa1ae1);
+            
+        
+
+        marker_e1de38f6547cb9aa9026ba8b93c06a9b.bindPopup(popup_0bab2659e8ae0e027f308374ad186cd3)
+        ;
+
+        
+    
+    
+            marker_e1de38f6547cb9aa9026ba8b93c06a9b.bindTooltip(
+                `<div>
+                     18. Vacanal Jubany - Hamburgueseria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e1de38f6547cb9aa9026ba8b93c06a9b.setIcon(div_icon_69ab50d7d0f7da21c9150339acd3fc97);
+            
+    
+            var marker_82dd5f07dc73fa425ea4961b9ed0eae4 = L.marker(
+                [41.931187, 2.254244],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_48808e8131d6453ae8e42899ec635fc0 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e17\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_0247088f4540e617ce89c805834515ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d8e6736d64aeb913201a2ffa4ff4213 = $(`<div id="html_1d8e6736d64aeb913201a2ffa4ff4213" style="width: 100.0%; height: 100.0%;"><b>17. CA LA MEI</b><br>VIC</div>`)[0];
+                popup_0247088f4540e617ce89c805834515ab.setContent(html_1d8e6736d64aeb913201a2ffa4ff4213);
+            
+        
+
+        marker_82dd5f07dc73fa425ea4961b9ed0eae4.bindPopup(popup_0247088f4540e617ce89c805834515ab)
+        ;
+
+        
+    
+    
+            marker_82dd5f07dc73fa425ea4961b9ed0eae4.bindTooltip(
+                `<div>
+                     17. CA LA MEI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_82dd5f07dc73fa425ea4961b9ed0eae4.setIcon(div_icon_48808e8131d6453ae8e42899ec635fc0);
+            
+    
+            var marker_cfb05db58ef68ac2f749499eeb0239a0 = L.marker(
+                [41.942746, 2.251518],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_b81f6de3cab628a438977834f68e8e39 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e10\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_d062c36d5b69592426f1096df0839db9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6713aa3251dddd5936e52141e0ac657f = $(`<div id="html_6713aa3251dddd5936e52141e0ac657f" style="width: 100.0%; height: 100.0%;"><b>10. AURIAL PADEL</b><br>VIC</div>`)[0];
+                popup_d062c36d5b69592426f1096df0839db9.setContent(html_6713aa3251dddd5936e52141e0ac657f);
+            
+        
+
+        marker_cfb05db58ef68ac2f749499eeb0239a0.bindPopup(popup_d062c36d5b69592426f1096df0839db9)
+        ;
+
+        
+    
+    
+            marker_cfb05db58ef68ac2f749499eeb0239a0.bindTooltip(
+                `<div>
+                     10. AURIAL PADEL
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cfb05db58ef68ac2f749499eeb0239a0.setIcon(div_icon_b81f6de3cab628a438977834f68e8e39);
+            
+    
+            var marker_fc95e80fd4c66e06b4c1e7a3fafed82a = L.marker(
+                [41.935702, 2.259921],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_aa9a4d03ae8eb78a1ea9bb4581a8a44c = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e12\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_8e308481b1b3a9d73ce3e7c9a198d231 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fb99b936d315d02f888d275ac40aa40 = $(`<div id="html_6fb99b936d315d02f888d275ac40aa40" style="width: 100.0%; height: 100.0%;"><b>12. BAR TAVERNA D'PAS</b><br>VIC</div>`)[0];
+                popup_8e308481b1b3a9d73ce3e7c9a198d231.setContent(html_6fb99b936d315d02f888d275ac40aa40);
+            
+        
+
+        marker_fc95e80fd4c66e06b4c1e7a3fafed82a.bindPopup(popup_8e308481b1b3a9d73ce3e7c9a198d231)
+        ;
+
+        
+    
+    
+            marker_fc95e80fd4c66e06b4c1e7a3fafed82a.bindTooltip(
+                `<div>
+                     12. BAR TAVERNA D'PAS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc95e80fd4c66e06b4c1e7a3fafed82a.setIcon(div_icon_aa9a4d03ae8eb78a1ea9bb4581a8a44c);
+            
+    
+            var marker_6e8114f9867511feb0f4453596c10b7e = L.marker(
+                [41.932992, 2.261336],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_ce694badc41a0266838fabc07857238b = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e11\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_ef69421ef95b7be1c141f988077900fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cdb9d044956b2a363b9de894227d127 = $(`<div id="html_6cdb9d044956b2a363b9de894227d127" style="width: 100.0%; height: 100.0%;"><b>11. PULIT, S.A</b><br>VIC</div>`)[0];
+                popup_ef69421ef95b7be1c141f988077900fa.setContent(html_6cdb9d044956b2a363b9de894227d127);
+            
+        
+
+        marker_6e8114f9867511feb0f4453596c10b7e.bindPopup(popup_ef69421ef95b7be1c141f988077900fa)
+        ;
+
+        
+    
+    
+            marker_6e8114f9867511feb0f4453596c10b7e.bindTooltip(
+                `<div>
+                     11. PULIT, S.A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e8114f9867511feb0f4453596c10b7e.setIcon(div_icon_ce694badc41a0266838fabc07857238b);
+            
+    
+            var marker_a280d799544777c87de46473c0c5e23a = L.marker(
+                [41.930045, 2.253202],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_45e3b5af8c38a5fd66bc24e29a359d5c = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e20\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_72d2369a2aade40973e330f9a13d6749 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca66bbde4faf559e0a68b75d03fae572 = $(`<div id="html_ca66bbde4faf559e0a68b75d03fae572" style="width: 100.0%; height: 100.0%;"><b>20. CASINO DE VIC</b><br>VIC</div>`)[0];
+                popup_72d2369a2aade40973e330f9a13d6749.setContent(html_ca66bbde4faf559e0a68b75d03fae572);
+            
+        
+
+        marker_a280d799544777c87de46473c0c5e23a.bindPopup(popup_72d2369a2aade40973e330f9a13d6749)
+        ;
+
+        
+    
+    
+            marker_a280d799544777c87de46473c0c5e23a.bindTooltip(
+                `<div>
+                     20. CASINO DE VIC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a280d799544777c87de46473c0c5e23a.setIcon(div_icon_45e3b5af8c38a5fd66bc24e29a359d5c);
+            
+    
+            var marker_b1b6ed6e7c9b549e725dc6f4669693a2 = L.marker(
+                [41.9375, 2.246],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_a2baac0f7ae4c021dfe2c7c6c22e54a9 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e8\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_5a656afc274a0ec747447cb0a6b3a9a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2d2eb6a0d9ae936cdb56b2abc86dce8 = $(`<div id="html_c2d2eb6a0d9ae936cdb56b2abc86dce8" style="width: 100.0%; height: 100.0%;"><b>8. CLUB BASQUET VIC</b><br>VIC</div>`)[0];
+                popup_5a656afc274a0ec747447cb0a6b3a9a0.setContent(html_c2d2eb6a0d9ae936cdb56b2abc86dce8);
+            
+        
+
+        marker_b1b6ed6e7c9b549e725dc6f4669693a2.bindPopup(popup_5a656afc274a0ec747447cb0a6b3a9a0)
+        ;
+
+        
+    
+    
+            marker_b1b6ed6e7c9b549e725dc6f4669693a2.bindTooltip(
+                `<div>
+                     8. CLUB BASQUET VIC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1b6ed6e7c9b549e725dc6f4669693a2.setIcon(div_icon_a2baac0f7ae4c021dfe2c7c6c22e54a9);
+            
+    
+            var marker_8ed9739160176c28c276d64c2941738f = L.marker(
+                [41.939926, 2.238415],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_8863f6e0975ad60c135bbcd27176d3d8 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e7\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_7d917264d8aeab7cd40b53d0757f4110 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7fdf32b33abfb434bd44d913846b185 = $(`<div id="html_d7fdf32b33abfb434bd44d913846b185" style="width: 100.0%; height: 100.0%;"><b>7. PADEL OSONA GURB</b><br>GURB</div>`)[0];
+                popup_7d917264d8aeab7cd40b53d0757f4110.setContent(html_d7fdf32b33abfb434bd44d913846b185);
+            
+        
+
+        marker_8ed9739160176c28c276d64c2941738f.bindPopup(popup_7d917264d8aeab7cd40b53d0757f4110)
+        ;
+
+        
+    
+    
+            marker_8ed9739160176c28c276d64c2941738f.bindTooltip(
+                `<div>
+                     7. PADEL OSONA GURB
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8ed9739160176c28c276d64c2941738f.setIcon(div_icon_8863f6e0975ad60c135bbcd27176d3d8);
+            
+    
+            var marker_dfd02dc35c93a92f27c85daf6f3d666e = L.marker(
+                [41.924275, 2.260045],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_e23c125082a2425e794a86d05adbeb07 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e23\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_e187a5b087cc94c9bb8a1af543ce714c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cccf3ad62f341e88e40cb696afa9310 = $(`<div id="html_4cccf3ad62f341e88e40cb696afa9310" style="width: 100.0%; height: 100.0%;"><b>23. ALOE</b><br>VIC</div>`)[0];
+                popup_e187a5b087cc94c9bb8a1af543ce714c.setContent(html_4cccf3ad62f341e88e40cb696afa9310);
+            
+        
+
+        marker_dfd02dc35c93a92f27c85daf6f3d666e.bindPopup(popup_e187a5b087cc94c9bb8a1af543ce714c)
+        ;
+
+        
+    
+    
+            marker_dfd02dc35c93a92f27c85daf6f3d666e.bindTooltip(
+                `<div>
+                     23. ALOE
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dfd02dc35c93a92f27c85daf6f3d666e.setIcon(div_icon_e23c125082a2425e794a86d05adbeb07);
+            
+    
+            var marker_c0be0d3e652cf7cbac31ee3a799dc878 = L.marker(
+                [41.929996, 2.255261],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_1631cc490d01eb14f51e493243864f34 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e15\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_a9459ee43389b1c9ab61c828f6d37807 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_793741fe455a8715b8f0de3faff6e1f6 = $(`<div id="html_793741fe455a8715b8f0de3faff6e1f6" style="width: 100.0%; height: 100.0%;"><b>15. LA TAVERNA D'EN NORTON</b><br>VIC</div>`)[0];
+                popup_a9459ee43389b1c9ab61c828f6d37807.setContent(html_793741fe455a8715b8f0de3faff6e1f6);
+            
+        
+
+        marker_c0be0d3e652cf7cbac31ee3a799dc878.bindPopup(popup_a9459ee43389b1c9ab61c828f6d37807)
+        ;
+
+        
+    
+    
+            marker_c0be0d3e652cf7cbac31ee3a799dc878.bindTooltip(
+                `<div>
+                     15. LA TAVERNA D'EN NORTON
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0be0d3e652cf7cbac31ee3a799dc878.setIcon(div_icon_1631cc490d01eb14f51e493243864f34);
+            
+    
+            var marker_7a950b20858b83df6e2826f7374df7e6 = L.marker(
+                [41.9211, 2.2498],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_68b6f915925f9e6b091a500572123110 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e1\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_884473b49311b0b4b67695e8e004b7da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cff4a7b21e69be1032785c7a3f61fcb = $(`<div id="html_5cff4a7b21e69be1032785c7a3f61fcb" style="width: 100.0%; height: 100.0%;"><b>1. BAR PRIEGO</b><br>VIC</div>`)[0];
+                popup_884473b49311b0b4b67695e8e004b7da.setContent(html_5cff4a7b21e69be1032785c7a3f61fcb);
+            
+        
+
+        marker_7a950b20858b83df6e2826f7374df7e6.bindPopup(popup_884473b49311b0b4b67695e8e004b7da)
+        ;
+
+        
+    
+    
+            marker_7a950b20858b83df6e2826f7374df7e6.bindTooltip(
+                `<div>
+                     1. BAR PRIEGO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7a950b20858b83df6e2826f7374df7e6.setIcon(div_icon_68b6f915925f9e6b091a500572123110);
+            
+    
+            var marker_1bc31380796ada0ea8873243501f4ce5 = L.marker(
+                [41.925199, 2.253796],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_69dc56e497bfce406dd508537c80fe43 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e21\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_ea547ead3808aaf121ff0e8598ae15bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04153819d3660652c6fc30fa5788f4dc = $(`<div id="html_04153819d3660652c6fc30fa5788f4dc" style="width: 100.0%; height: 100.0%;"><b>21. BAR SOL NOU</b><br>VIC</div>`)[0];
+                popup_ea547ead3808aaf121ff0e8598ae15bc.setContent(html_04153819d3660652c6fc30fa5788f4dc);
+            
+        
+
+        marker_1bc31380796ada0ea8873243501f4ce5.bindPopup(popup_ea547ead3808aaf121ff0e8598ae15bc)
+        ;
+
+        
+    
+    
+            marker_1bc31380796ada0ea8873243501f4ce5.bindTooltip(
+                `<div>
+                     21. BAR SOL NOU
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1bc31380796ada0ea8873243501f4ce5.setIcon(div_icon_69dc56e497bfce406dd508537c80fe43);
+            
+    
+            var marker_8bb9aa7fdbc837447b1ace4e46bce13d = L.marker(
+                [41.920984, 2.251159],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_127216d2c3bac5018693d7c12903a140 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e3\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_be24a19867e16404462b9dc8852632fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_185401083faaf444370594570e870019 = $(`<div id="html_185401083faaf444370594570e870019" style="width: 100.0%; height: 100.0%;"><b>3. VINS I BEGUDES REMEI</b><br>VIC</div>`)[0];
+                popup_be24a19867e16404462b9dc8852632fb.setContent(html_185401083faaf444370594570e870019);
+            
+        
+
+        marker_8bb9aa7fdbc837447b1ace4e46bce13d.bindPopup(popup_be24a19867e16404462b9dc8852632fb)
+        ;
+
+        
+    
+    
+            marker_8bb9aa7fdbc837447b1ace4e46bce13d.bindTooltip(
+                `<div>
+                     3. VINS I BEGUDES REMEI
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8bb9aa7fdbc837447b1ace4e46bce13d.setIcon(div_icon_127216d2c3bac5018693d7c12903a140);
+            
+    
+            var marker_020412ed37b9e03b851679330b47c808 = L.marker(
+                [41.929408, 2.253559],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_ed4d988e87f3894e0625c0a55e641b43 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e19\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_ea0f82ad4631848d6d9e6aa278ad5a2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f15e6e0a8ba057893415da0758d9facf = $(`<div id="html_f15e6e0a8ba057893415da0758d9facf" style="width: 100.0%; height: 100.0%;"><b>19. EL CALIU RESTAURANT (VIC)</b><br>VIC</div>`)[0];
+                popup_ea0f82ad4631848d6d9e6aa278ad5a2d.setContent(html_f15e6e0a8ba057893415da0758d9facf);
+            
+        
+
+        marker_020412ed37b9e03b851679330b47c808.bindPopup(popup_ea0f82ad4631848d6d9e6aa278ad5a2d)
+        ;
+
+        
+    
+    
+            marker_020412ed37b9e03b851679330b47c808.bindTooltip(
+                `<div>
+                     19. EL CALIU RESTAURANT (VIC)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_020412ed37b9e03b851679330b47c808.setIcon(div_icon_ed4d988e87f3894e0625c0a55e641b43);
+            
+    
+            var marker_ecbf0a509f145d3642b25cd008de7472 = L.marker(
+                [41.927242, 2.255694],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_0fb0ca0634f2417e8e76a3f28a88c8fe = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e22\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_f5f779d8c1a7db0d6513680074cc943b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96c2331cf6c832b3f08853acd14d89f7 = $(`<div id="html_96c2331cf6c832b3f08853acd14d89f7" style="width: 100.0%; height: 100.0%;"><b>22. BAR LA PISTA</b><br>VIC</div>`)[0];
+                popup_f5f779d8c1a7db0d6513680074cc943b.setContent(html_96c2331cf6c832b3f08853acd14d89f7);
+            
+        
+
+        marker_ecbf0a509f145d3642b25cd008de7472.bindPopup(popup_f5f779d8c1a7db0d6513680074cc943b)
+        ;
+
+        
+    
+    
+            marker_ecbf0a509f145d3642b25cd008de7472.bindTooltip(
+                `<div>
+                     22. BAR LA PISTA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ecbf0a509f145d3642b25cd008de7472.setIcon(div_icon_0fb0ca0634f2417e8e76a3f28a88c8fe);
+            
+    
+            var marker_d81764d401534f85891ed162dbaf0415 = L.marker(
+                [41.930408, 2.253817],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_1fa5a56c3df97f08942a6434a7d19fb3 = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e16\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_3dbabbf537d1489b7de8f4b1873a8281 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e272dafb101cad6c9492c1c4b2d1abaa = $(`<div id="html_e272dafb101cad6c9492c1c4b2d1abaa" style="width: 100.0%; height: 100.0%;"><b>16. SNACK (VIC)</b><br>VIC</div>`)[0];
+                popup_3dbabbf537d1489b7de8f4b1873a8281.setContent(html_e272dafb101cad6c9492c1c4b2d1abaa);
+            
+        
+
+        marker_d81764d401534f85891ed162dbaf0415.bindPopup(popup_3dbabbf537d1489b7de8f4b1873a8281)
+        ;
+
+        
+    
+    
+            marker_d81764d401534f85891ed162dbaf0415.bindTooltip(
+                `<div>
+                     16. SNACK (VIC)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d81764d401534f85891ed162dbaf0415.setIcon(div_icon_1fa5a56c3df97f08942a6434a7d19fb3);
+            
+    
+            var marker_7dfd1e59c8127074b0fd3bf75f5ec01c = L.marker(
+                [41.933278, 2.193306],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_c45e388dc684e6ba470cf2b7480e9d2a = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e6\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_845701c692d43e9ef5f9d94213dcb78f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48bc0e1745069b3ed6ad7c99f8a933e0 = $(`<div id="html_48bc0e1745069b3ed6ad7c99f8a933e0" style="width: 100.0%; height: 100.0%;"><b>6. GUSTUM AREAS 2 (GIRONA-LLEIDA)</b><br>GURB</div>`)[0];
+                popup_845701c692d43e9ef5f9d94213dcb78f.setContent(html_48bc0e1745069b3ed6ad7c99f8a933e0);
+            
+        
+
+        marker_7dfd1e59c8127074b0fd3bf75f5ec01c.bindPopup(popup_845701c692d43e9ef5f9d94213dcb78f)
+        ;
+
+        
+    
+    
+            marker_7dfd1e59c8127074b0fd3bf75f5ec01c.bindTooltip(
+                `<div>
+                     6. GUSTUM AREAS 2 (GIRONA-LLEIDA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7dfd1e59c8127074b0fd3bf75f5ec01c.setIcon(div_icon_c45e388dc684e6ba470cf2b7480e9d2a);
+            
+    
+            var marker_a1f295999fd9e0636a23fce3223e227c = L.marker(
+                [41.93425, 2.194306],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_30863324fb49ef8b318691ba8a802f1b = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e5\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_3fd068bc23e57f5d660ca6df128daf58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_556b5d64f02e103a1ec7d80ccbe6348a = $(`<div id="html_556b5d64f02e103a1ec7d80ccbe6348a" style="width: 100.0%; height: 100.0%;"><b>5. GUSTUM AREAS 1 (LLEIDA-GIRONA)</b><br>GURB</div>`)[0];
+                popup_3fd068bc23e57f5d660ca6df128daf58.setContent(html_556b5d64f02e103a1ec7d80ccbe6348a);
+            
+        
+
+        marker_a1f295999fd9e0636a23fce3223e227c.bindPopup(popup_3fd068bc23e57f5d660ca6df128daf58)
+        ;
+
+        
+    
+    
+            marker_a1f295999fd9e0636a23fce3223e227c.bindTooltip(
+                `<div>
+                     5. GUSTUM AREAS 1 (LLEIDA-GIRONA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1f295999fd9e0636a23fce3223e227c.setIcon(div_icon_30863324fb49ef8b318691ba8a802f1b);
+            
+    
+            var marker_d7ed24baf03554b9b5a9b6ce17b2f83a = L.marker(
+                [41.939354, 2.254115],
+                {
+}
+            ).addTo(map_e16231f22e8ac9d1126e92f338d2aa66);
+        
+    
+            var div_icon_c8aa456a0a5f585a3dbe04ce6e9213ad = L.divIcon({
+  "html": "\u003cdiv style=\u0027background:#f2b705;color:#1f2937;border-radius:14px;width:28px;height:28px;line-height:28px;text-align:center;font-weight:800;border:2px solid white;\u0027\u003e9\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+        var popup_2c12cb288dbea6be4bd2deef6dc00a62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3d9b159a8b4b4cffc7528880db10277 = $(`<div id="html_d3d9b159a8b4b4cffc7528880db10277" style="width: 100.0%; height: 100.0%;"><b>9. MGA GP VIC</b><br>VIC</div>`)[0];
+                popup_2c12cb288dbea6be4bd2deef6dc00a62.setContent(html_d3d9b159a8b4b4cffc7528880db10277);
+            
+        
+
+        marker_d7ed24baf03554b9b5a9b6ce17b2f83a.bindPopup(popup_2c12cb288dbea6be4bd2deef6dc00a62)
+        ;
+
+        
+    
+    
+            marker_d7ed24baf03554b9b5a9b6ce17b2f83a.bindTooltip(
+                `<div>
+                     9. MGA GP VIC
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7ed24baf03554b9b5a9b6ce17b2f83a.setIcon(div_icon_c8aa456a0a5f585a3dbe04ce6e9213ad);
+            
+</script>
+</html>
